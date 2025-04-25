@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hashttory</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<script>
+  function selecionarHashtag(elementoClicado) {
+    const todas = document.querySelectorAll('.hashtag-icon');
+    todas.forEach(tag => tag.classList.remove('active'));
+    elementoClicado.classList.add('active');
+
+    const id = elementoClicado.getAttribute('data-id');
+
+    // Oculta todas as seções de detalhe
+    document.querySelectorAll('.hashtag-detalhe').forEach(sec => sec.style.display = 'none');
+
+    // Exibe apenas a seção correspondente
+    const secao = document.getElementById(id + '-section');
+    if (secao) {
+      secao.style.display = 'flex';
+    }
+  }
+</script>
+
+<body>
+
+  <!-- Logo principal -->
+  <img src="images/logo_hashttory_transparente.png" alt="Logo Hashttory" class="logo" />
+
+  <!-- Seção do resumo com fundo branco -->
+  <section class="secao-resumo">
+    <div class="resumo">
+      <p>
+        <strong>Hashttory</strong> é uma iniciativa que organiza acontecimentos históricos a partir de hashtags, utilizando-as como base ontológica. A proposta é mapear, analisar e interpretar essas inscrições temporais no ciberespaço, evidenciando as diferentes formas de narrar um mesmo fato e contribuindo para uma abordagem historiográfica mais plural na era digital.
+	  <p>
+		<strong>Hashttory</strong> it is an initiative that organises historical events through hashtags, employing them as an ontological basis. The project aims to map, analyse, and interpret these temporal inscriptions within cyberspace, foregrounding the diverse ways in which a single event may be narrated and contributing to a more pluralistic historiographical approach in the digital era.
+      </p>
+    </div>
+  </section>
+
+  <!-- Seção das hashtags -->
+  <section class="secao-hashtags">
+    <h3>Temporal inscriptions</h3>
+    <div class="hashtag-barra">
+      <span class="hashtag-icon" onclick="selecionarHashtag(this)" data-id="sidibouzid">#sidibouzid</span>
+      <span class="hashtag-icon" onclick="selecionarHashtag(this)" data-id="tarifaco">#tarifaço</span>
+      <span class="hashtag-icon" onclick="selecionarHashtag(this)" data-id="1anolamaeluta">#1anolamaeluta</span>
+      <span class="hashtag-icon" onclick="selecionarHashtag(this)" data-id="blacklifesmatter">#blacklivesmatter</span>
+      <span class="hashtag-icon" onclick="selecionarHashtag(this)" data-id="tbt">#tbt</span>
+    </div>
+  </section>
+<section id="sidibouzid-section" class="hashtag-detalhe" style="display: none;">
+  <div class="detalhe-conteudo">
+    <img src="images/sidibouzid_ilustracao.png" alt="Ilustração da hashtag #sidibouzid" class="imagem-hashtag" />
+    <div class="texto-hashtag">
+      <h3>#sidibouzid</h3>
+      <p>
+        A hashtag <strong>#sidibouzid</strong> surge em referência à cidade tunisiana onde Mohamed Bouazizi, um jovem vendedor ambulante, ateou fogo ao próprio corpo em dezembro de 2010, após ser humilhado por autoridades locais. O episódio desencadeou uma onda de protestos que se espalhou pela Tunísia e por todo o mundo árabe, dando início à chamada <em>Primavera Árabe</em>. A hashtag passou a circular nas redes como marcador do início de uma era de levantes populares digitais.
+      </p>
+    </div>
+  </div>
+</section>
+<section id="blacklifesmatter-section" class="hashtag-detalhe" style="display: none;">
+  <div class="detalhe-conteudo">
+    <img src="images/blacklivesmatter_ilustracao.png" alt="Ilustração da hashtag #blacklivesmatter" class="imagem-hashtag" />
+    <div class="texto-hashtag">
+      <h3>#blacklivesmatter</h3>
+      <p>
+        A hashtag <strong>#blacklivesmatter</strong> emergiu em 2013 nos Estados Unidos, após a absolvição de George Zimmerman, acusado de matar o jovem negro Trayvon Martin. Desde então, tornou-se um movimento global que denuncia a violência policial, o racismo sistêmico e a desigualdade racial, mobilizando milhões de pessoas em marchas, protestos e ações online. A etiqueta tornou-se um poderoso marcador de lutas contemporâneas por justiça social.
+      </p>
+	  <div class="interpretacao-historica">
+  <h4>Longa duração</h4>
+  <p>
+    Ao analisar a hashtag <strong>#blacklivesmatter</strong> sob a perspectiva da longa duração proposta por Fernand Braudel, é possível observar que ela não se refere apenas a um episódio isolado de violência racial, mas ecoa uma história profunda de desigualdade e resistência negra nas Américas. A permanência dos temas que ela mobiliza — justiça, violência estrutural, identidade racial — revela uma estrutura de longa duração marcada pela herança da escravidão, do colonialismo e da exclusão social. Quando lemos o artigo “ The Longue Durée of Black Lives Matter” de Alondra Nelson, publicado no American Journal of Public Health em 2016, fica explícito que essas camadas históricas continuam a informar os modos de luta e inscrevem a hashtag num tempo mais denso e profundo.
+  </p>
+</div>
+
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
+

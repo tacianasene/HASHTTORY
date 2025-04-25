@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hashttory</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" /> 
+</head>
+
+<body>
+
+  <img src="images/logo_hashttory_transparente.png" alt="Logo Hashttory" class="logo" />
+
+  <div class="resumo">
+    <p>
+      <strong>Hashttory</strong> é uma iniciativa que organiza acontecimentos históricos a partir de hashtags, utilizando-as como base ontológica. A proposta é mapear, analisar e interpretar essas inscrições temporais no ciberespaço, evidenciando as diferentes formas de narrar um mesmo fato e contribuindo para uma abordagem historiográfica mais plural na era digital.
+    </p>
+  </div>
+  
+</body>
+</html>
