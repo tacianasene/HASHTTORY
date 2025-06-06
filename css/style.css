@@ -191,4 +191,33 @@ body {
   text-align: justify;
   line-height: 1.6;
 }
+.hashtags-correlatas {
+  margin-top: 2rem;
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-left: 4px solid #E2725B;
+}
+
+.hashtags-correlatas h4 {
+  margin-bottom: 0.5rem;
+  color: #001f3f;
+}
+
+.hashtags-correlatas ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.hashtags-correlatas li {
+  margin-bottom: 0.3rem;
+}
+
+.hashtags-correlatas a {
+  color: #001f3f;
+  text-decoration: none;
+}
+
+.hashtags-correlatas a:hover {
+  text-decoration: underline;
+}
 
