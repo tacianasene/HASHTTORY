@@ -102,12 +102,10 @@ body {
 }
 
 .detalhe-conteudo {
-  max-width: 900px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* centraliza a imagem e o texto */
   gap: 2rem;
-  text-align: center;
 }
 
 .imagem-hashtag {
