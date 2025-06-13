@@ -220,4 +220,36 @@ body {
 .hashtags-correlatas a:hover {
   text-decoration: underline;
 }
+.secao-hq {
+  background-color: #ffffff;
+  color: #001F3F;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.introducao-hq {
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.hq-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.hq-img {
+  max-width: 90%;
+  height: auto;
+  border: 3px solid #E2725B;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.creditos-hq {
+  font-size: 0.95rem;
+  color: #444;
+}
 
