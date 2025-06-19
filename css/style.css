@@ -252,4 +252,101 @@ body {
   font-size: 0.95rem;
   color: #444;
 }
+.hq-carrossel {
+  text-align: center;
+  margin: 4rem auto;
+  background-color: #f8f8f8;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.hq-carrossel h3 {
+  color: #001f3f;
+  margin-bottom: 1rem;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 300px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track img {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+}
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  z-index: 10;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.hq-edicoes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.hq-carrossel {
+  max-width: 500px;
+  flex: 1 1 45%;
+}
+.introducao-hq-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* para dispositivos menores */
+}
+
+.texto-hq-intro {
+  flex: 1;
+  min-width: 250px;
+}
+
+.imagem-hashttory img {
+  max-width: 400px;
+  height: auto;
+}
+.introducao-hq-container {
+  background-color: #CC7722 !important;
+  padding: 20px;
+
+}
+.introducao-hq {
+  display: flex;
+  justify-content: space-between; /* distribui os elementos nos extremos */
+  background-color: #CC7722; /*cor terrosa
+  align-items: center;            /* alinha verticalmente */
+  width: 100vw;                   /* ocupa toda a largura da tela */
+  padding: 0;                 /* espaçamento lateral opcional */
+  box-sizing: border-box;
+}
+
+
+
 

@@ -41,23 +41,83 @@
       </p>
     </div>
   </section>
+  
 <section class="secao-hq" id="hq">
   <h2>HQ Hashttory</h2>
-  <p class="introducao-hq">
+  
+   <div class="introducao-hq">
+    <div class="texto-hq-intro">
+	<p>
     Esta HQ foi criada como uma forma de traduzir visualmente o conceito de tempo nas hashtags. Através de uma história breve, o Hashttory propõe uma leitura historiográfica acessível, crítica e sensível às inscrições digitais do presente.
-  </p>
-
-  <div class="hq-container">
-    <img src="images/hq_edicao1.png" alt="HQ Edição 1 - Tempo nas Hashtags" class="hq-img" />
+	</p>
+	</div>
+	
+	<div class= "imagem-hashttory">
+	  <img src="images/hashttory_bot.png" alt="Mascote Hashttory" />
+    </div>
   </div>
+</section>
 
-  <div class="creditos-hq">
-    <p><strong>Edição #1:</strong>Hashtags e o tempo<br/>
+<div class="hq-edicoes"> <!-- AQUI começa o agrupamento lado a lado -->
+<!-- Edição 1 -->
+<section id="hq-edicao1" class="hq-carrossel">
+  <h3>HQ – Edição 1</h3>
+  <div class="carousel-container" id="carousel-ed1">
+    <button class="prev">&#10094;</button>
+    <div class="carousel-track">
+      <img src="images/hq/edicao1/tirinha1_quadro1.png" alt="Tirinha 1 - Quadro 1">
+      <img src="images/hq/edicao1/tirinha1_quadro2.png" alt="Tirinha 1 - Quadro 2">
+      <img src="images/hq/edicao1/tirinha1_quadro3.png" alt="Tirinha 1 - Quadro 3">
+      <img src="images/hq/edicao1/tirinha1_quadro4.png" alt="Tirinha 1 - Quadro 4">
+      <img src="images/hq/edicao1/tirinha1_quadro5.png" alt="Tirinha 1 - Quadro 5">
+    </div>
+    <button class="next">&#10095;</button>
+  </div>
+</section>
+
+<!-- Edição 2 -->
+  <section id="hq-edicao2" class="hq-carrossel">
+  <h3>HQ – Edição 2</h3>
+  <div class="carousel-container" id="carousel-ed2">
+    <button class="prev">&#10094;</button>
+    <div class="carousel-track">
+      <img src="images/hq/edicao2/tirinha2_quadro1.png" alt="Tirinha 2 - Quadro 1">
+      <img src="images/hq/edicao2/tirinha2_quadro2.png" alt="Tirinha 2 - Quadro 2">
+      <img src="images/hq/edicao2/tirinha2_quadro3.png" alt="Tirinha 2 - Quadro 3">
+      <img src="images/hq/edicao2/tirinha2_quadro4.png" alt="Tirinha 2 - Quadro 4">
+      <img src="images/hq/edicao2/tirinha2_quadro5.png" alt="Tirinha 2 - Quadro 5">
+      <img src="images/hq/edicao2/tirinha2_quadro6.png" alt="Tirinha 2 - Quadro 6">
+    </div>
+    <button class="next">&#10095;</button>
+  </div>
+  </section>
+  
+  <!-- Edição 3 -->
+  <section id="hq-edicao3" class="hq-carrossel">
+    <h3>HQ – Edição 3</h3>
+    <div class="carousel-container">
+      <button class="prev">&#10094;</button>
+      <div class="carousel-track">
+        <img src="images/hq/edicao3/tirinha3_quadro1.png" alt="Tirinha 3 - Quadro 1">
+        <img src="images/hq/edicao3/tirinha3_quadro2.png" alt="Tirinha 3 - Quadro 2">
+		<img src="images/hq/edicao3/tirinha3_quadro3.png" alt="Tirinha 3 - Quadro 3">
+		<img src="images/hq/edicao3/tirinha3_quadro4.png" alt="Tirinha 3 - Quadro 4">
+		<img src="images/hq/edicao3/tirinha3_quadro5.png" alt="Tirinha 3 - Quadro 5">
+		<img src="images/hq/edicao3/tirinha3_quadro6.png" alt="Tirinha 3 - Quadro 6">
+      </div>
+      <button class="next">&#10095;</button>
+    </div>
+  </section>
+  </div> <!-- AQUI termina o agrupamento lado a lado -->
+  
+   <div class="creditos-hq">
+    <p><strong>Edições<br/>
     Roteiro: Taciana Sene Lúcio<br/>
-    Arte: Hashttory Studio (AI + edição)<br/>
+    Arte: Hashttory Studio (IA + edição)<br/>
     Ano: 2025</p>
   </div>
 </section>
+
 
   <!-- Seção das hashtags -->
   <section class="secao-hashtags">
@@ -307,3 +367,34 @@ Embora a hashtag continue a ser utilizada, observa-se uma gradual diminuição e
   </ul>
 </div>
 </section>
+
+<script>
+  document.querySelectorAll('.carousel-container').forEach(container => {
+    const track = container.querySelector('.carousel-track');
+    const slides = track.querySelectorAll('img');
+    const prevBtn = container.querySelector('.prev');
+    const nextBtn = container.querySelector('.next');
+    let currentIndex = 0;
+
+    function updateCarousel() {
+      const slideWidth = slides[0].clientWidth;
+      track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+
+    prevBtn.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateCarousel();
+      }
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (currentIndex < slides.length - 1) {
+        currentIndex++;
+        updateCarousel();
+      }
+    });
+
+    window.addEventListener('resize', updateCarousel);
+  });
+</script>
