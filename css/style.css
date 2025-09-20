@@ -347,6 +347,17 @@ body {
   box-sizing: border-box;
 }
 
+#sidibouzid-network {
+  text-align: center;
+  margin: 40px 0;
+}
+
+#sidibouzid-network .caption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 10px;
+  font-style: italic;
+}
 
 
 
