@@ -146,15 +146,16 @@ body {
   text-align: justify;
 }
 
-.fontes-hashtag {
+.fontes-hashtag p {
   margin-top: 2.5rem;
   padding-top: 1.5rem;
   border-top: 2px solid #ccc;
-  font-size: 0.95rem;
+   font-size: 0.85em;
+  line-height: 1.4;
   color: #333;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  padding: 1.5rem;
+  margin-top: 1em;
+  padding: 1em;
+  
 }
 
 .fontes-hashtag h4 {
@@ -357,6 +358,49 @@ body {
   color: #666;
   margin-top: 10px;
   font-style: italic;
+}
+/* título/botão */
+.fontes-toggle{
+  cursor:pointer;
+  background:none;
+  border:0;
+  font: inherit;          /* herda tipografia do h2 */
+  color:#004080;          /* ajuste a cor para sua paleta */
+  display:flex;
+  align-items:center;
+  gap:.5rem;
+  padding:0;
+}
+
+/* setinha gira ao abrir */
+.fontes-toggle .chevron{
+  transition: transform .2s ease;
+}
+.fontes-toggle[aria-expanded="true"] .chevron{
+  transform: rotate(90deg);
+}
+
+/* área das fontes (colapsável com animação) */
+.fontes-content{
+  overflow:hidden;
+  max-height:0;
+  opacity:0;
+  transition: max-height .3s ease, opacity .2s ease;
+  will-change: max-height, opacity;
+  margin-top:.5rem;
+}
+
+/* estado aberto */
+.fontes-content.is-open{
+  max-height:2000px;  /* valor alto para comportar a altura do conteúdo */
+  opacity:1;
+}
+
+/* tamanho menor só nas referências */
+#fontes-hashtag p{
+  font-size:.85em;   /* ajuste fino: .8em a .9em */
+  line-height:1.4;
+  color:#333;        /* opcional, mais suave que o corpo */
 }
 
 

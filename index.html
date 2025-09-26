@@ -7,24 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<script>
-  function selecionarHashtag(elementoClicado) {
-    const todas = document.querySelectorAll('.hashtag-icon');
-    todas.forEach(tag => tag.classList.remove('active'));
-    elementoClicado.classList.add('active');
 
-    const id = elementoClicado.getAttribute('data-id');
-
-    // Oculta todas as seções de detalhe
-    document.querySelectorAll('.hashtag-detalhe').forEach(sec => sec.style.display = 'none');
-
-    // Exibe apenas a seção correspondente
-    const secao = document.getElementById(id + '-section');
-    if (secao) {
-      secao.style.display = 'flex';
-    }
-  }
-</script>
 
 <body>
 
@@ -36,6 +19,7 @@
     <div class="resumo">
       <p>
         <strong>Hashttory</strong> é uma iniciativa de historiografia digital que tem como propósito ativar e organizar memórias coletivas inscritas na internet, tomando a hashtag como ponto de ignição narrativa. A proposta é mapear, analisar e interpretar essas inscrições temporais no ciberespaço, evidenciando as diferentes formas de narrar um mesmo fato e contribuindo para uma abordagem historiográfica mais plural na era digital.
+	  </p>
 	  <p>
 		<strong>Hashttory</strong> it is an historiography initiative that seeks to activate and curate collective memories embedded in the internet, using the hashtag as a narrative trigger and point of departure. The project aims to map, analyse, and interpret these temporal inscriptions within cyberspace, foregrounding the diverse ways in which a single event may be narrated and contributing to a more pluralistic historiographical approach in the digital era.
       </p>
@@ -124,9 +108,7 @@
 		<button class="next">&#1095;</button>
 	</div>
  </section>
- 
-			
-			
+ 			
   </div> <!-- AQUI termina o agrupamento lado a lado -->
   
    <div class="creditos-hq">
@@ -135,21 +117,21 @@
     Arte: Hashttory Studio (IA + edição)<br/>
     Ano: 2025</p>
   </div>
-</section>
 
 
   <!-- Seção das hashtags -->
   <section class="secao-hashtags">
-    <h3>Temporal inscriptions</h3>
-    <div class="hashtag-barra">
-      <span class="hashtag-icon" onclick="selecionarHashtag(this)" data-id="sidibouzid">#sidibouzid</span>
-      <span class="hashtag-icon" onclick="selecionarHashtag(this)" data-id="hongkongprotests">#hongkongprotests</span>
-      <span class="hashtag-icon" onclick="selecionarHashtag(this)" data-id="1anodelamaeluta">#1anodelamaeluta</span>
-      <span class="hashtag-icon" onclick="selecionarHashtag(this)" data-id="blacklifesmatter">#blacklivesmatter</span>
-      <span class="hashtag-icon" onclick="selecionarHashtag(this)" data-id="september11">#september11</span>
-	  <span class="hashtag-icon" onclick="selecionarHashtag(this)" data-id="sosriodoce">#sosriodoce</span>
-    </div>
-  </section>
+  <h3>Temporal inscriptions</h3>
+  <div class="hashtag-barra">
+    <span class="hashtag-icon" data-id="sidibouzid">#sidibouzid</span>
+    <span class="hashtag-icon" data-id="hongkongprotests">#hongkongprotests</span>
+    <span class="hashtag-icon" data-id="1anodelamaeluta">#1anodelamaeluta</span>
+    <span class="hashtag-icon" data-id="blacklivesmatter">#blacklivesmatter</span>
+    <span class="hashtag-icon" data-id="september11">#september11</span>
+    <span class="hashtag-icon" data-id="sosriodoce">#sosriodoce</span>
+  </div>
+</section>
+
 <section id="sidibouzid-section" class="hashtag-detalhe" style="display: none;">
   <div class="detalhe-conteudo">
   
@@ -162,9 +144,68 @@
       </p>
    
    <div class= "interpretacao-historica">
-	<h4>Longa duração</h4>
+	<h4>Me conta essa história!</h4>
 	<p> 
-	XXXX ainda preciso escrever esse texto 
+	A historiografia da hashtag #sidibouzid permite, sob a lente da memória digital e das temporalidades complexas, analisar a emergência da Primavera Árabe na Tunísia. Esta inscrição digital não é meramente um rótulo de categorização, mas um marcador temporal e geográfico crucial que sintetiza a transposição de um evento local para um fenômeno transnacional e global (Bartkowiak et al., 2017). 
+	</p>
+	<p>
+	Contexto do evento
+	</p>
+	<p>
+	O contexto imediato da hashtag #sidibouzid é a Revolução Tunisiana, considerada o catalisador da Primavera Árabe (Lecomte, 2011; Bartkowiak et al., 2017). A #sidibouzid surge em referência aos protestos que tiveram início na cidade de Sidi Bouzid em dezembro de 2010.
+O evento que desencadeou o movimento foi o ato trágico de Mohammed Bouazizi, um jovem vendedor de vegetais que ateou fogo ao próprio corpo em 17 de dezembro de 2010, em protesto contra a humilhação policial e a confiscação de seus bens. Tal evento, que poderia ter permanecido localizado e ignorado, circulou amplamente através das redes sociais (Elhaou, 2012; Dahmen-Jarrin, 2012).
+A hashtag #sidibouzid foi rapidamente adotada por ativistas, jornalistas e observadores internacionais para organizar as publicações e acompanhar o desenrolar da revolução. Conforme ilustrado por Transfeld e Werenfels (2016), a informação sobre o incidente escalou no Twitter, passando de #bouazizi (a pessoa) para #sidibouzid (a cidade) e, posteriormente, para #tunisia (o país), marcando a progressão das notícias do nível local ao nacional e internacional, contornando o apagão midiático e a censura estatal.
+O primeiro uso documentado da #sidibouzid ocorreu em 27 de dezembro de 2010, ligada a uma manifestação em Túnis (Lecomte, 2011). O seu uso aumentou drasticamente a partir de 9 de janeiro de 2011, quando as notícias e os vídeos da violência policial em cidades como Kasserine, Thala e Regueb se disseminaram na rede. O pico de uso da hashtag foi observado nos dias 13 e 14 de janeiro, coincidindo com o colapso do regime e a renúncia do presidente Zine El Abidine Ben Ali, em 14 de janeiro de 2011.
+	</p>
+	<p>
+	Articulando temporalidades
+	</p>
+	<p>
+	Enquanto historiadora da temporalidade digital, reconheço na trajetória da #sidibouzid a materialização das três durações propostas por Fernand Braudel: a efêmera do evento, a conjuntural da mobilização, e a profunda da estrutura social.
+	</p>
+	<p>
+	O evento
+	</p>
+	<p>
+	A #sidibouzid funcionou como um marcador puro de evento no ciberespaço, destacando-se pela instantaneidade e imediaticidade comunicacional (Bartkowiak et al., 2017). O Twitter, sendo um microblog, permitiu que indivíduos se comunicassem de forma instantânea, constituindo uma "rede não regulada" que forneceu atualizações globais em tempo real (Bartkowiak et al., 2017). A hashtag atingiu o seu clímax em 14 de janeiro, refletindo a explosão da notícia no momento da queda de Ben Ali. Esta instantaneidade era crucial para a coordenação logística e a discussão em tempo real sobre os protestos (Lotan et al., 2011). No plano do discurso, a hashtag serviu como um aviso à opinião pública internacional sobre os massacres e a repressão, um ato performativo de contestação.
+	</p>
+	<p>
+	A conjuntura
+	</p>
+	<p>
+	A #sidibouzid insere-se na conjuntura da mobilização transnacional da Primavera Árabe (Bartkowiak et al., 2017). Ela marca o período em que as mídias sociais foram utilizadas para coordenar e estruturar os movimentos contestatórios, ligando o ciberativismo às ações de rua (Gerbaudo, 2012; Bartkowiak et al., 2017). Esse ciclo de protestos representou a massificação da crítica online que vinha se diversificando desde meados dos anos 2000, notadamente através de blogs e do Facebook (Lecomte, 2011; Elhaou, 2012). A proliferação da hashtag catalisou o descontentamento popular e demonstrou a relevância crescente de atores não estatais no cenário político (Howard et al., 2011).
+	</p>
+	<p>
+	A estrutura
+	</p>
+	<p>
+	Na longa duração, a #sidibouzid é um sintoma discursivo de um anseio reprimido estruturalmente profundo da população árabe pela deposição de ditadores. A Tunísia possuía uma esfera pública online ativa e cyberdissidents engajados desde o final dos anos 1990. O regime de Ben Ali, caracterizado por um sistema autoritário, estimulava o uso de plataformas digitais como tática persistente para contornar a censura e a propaganda, o que pavimentou a capacidade de resposta na crise (Lecomte, 2011; Howard et al., 2011). O sucesso da hashtag reflete, portanto, uma estrutura social profundamente autoritária que, ao reprimir a comunicação tradicional, forçou a emergência de canais digitais como arquivo e plataforma de protesto (Lecomte, 2011; Bartkowiak et al., 2017).
+	</p>
+	<p>
+	Finalmente
+	</p>
+	<p>
+	A hashtag #sidibouzid estabeleceu-se como uma inscrição temporal de extrema relevância no ciberespaço (Bartkowiak et al., 2017). Ela transcende a sua função técnica de indexação de conteúdo (Messina, 2007), atuando como um artefato de memória que registra o colapso de um regime autoritário e a ascensão da comunicação mediada.
+Apesar de o sucesso da revolução na Tunísia não poder ser simplificado como uma "revolução Twitter", a hashtag demonstrou a capacidade do Twitter de funcionar como uma praça pública aberta, permitindo a comunicação global e imediata (Bartkowiak et al., 2017). A #sidibouzid foi vital para a propagação transnacional da revolta e para a conversação global sobre a busca por liberdade e dignidade, transformando um drama local em um movimento regional (Transfeld & Werenfels, 2016).
+Em suma, a #sidibouzid encapsula a complexa dinâmica na qual os conflitos do "mundo real" são reproduzidos e reforçados na esfera digital (Transfeld & Werenfels, 2016). A análise historiográfica deste fenômeno exige que se vá além do determinismo tecnológico, reconhecendo a hashtag como um ponto de convergência de redes pré-existentes, estratégias linguísticas complexas e um profundo contexto histórico de repressão e desejo de mudança.
+	</p>
+	<p>
+	Aspectos pouco explorados
+	</p>
+	<p>
+	Apesar da ampla cobertura do fenômeno #sidibouzid, alguns aspetos da sua historiografia digital merecem uma investigação mais aprofundada, desafiando narrativas simplistas de uma "revolução Twitter" (Lim, 2012; Bartkowiak et al., 2017).
+	</p>
+	<p>
+	1.	Atores Elitistas e Transnacionais: Estudos demonstram que o uso do Twitter para a #sidibouzid era minoritário na população tunisiana (menos de 1% tinha conta no Magreb). O espaço era dominado por uma elite urbana, altamente qualificada e móvel. A maioria dos tweets procedia de ativistas transnacionais e da diáspora tunisiana, o que sugere que o Twitter serviu mais como plataforma de articulação da diáspora e de comunicação externa do que de mobilização interna de massas (Dahmen-Jarrin, 2012; Poell & Darmoni, 2013).
+	</p>
+	<p>
+	2.	Estratégia Multilíngue: A #sidibouzid não era monolíngue, mas um espaço multilíngue que mobilizou pelo menos vinte e cinco idiomas (Poell & Darmoni, 2013). Os idiomas dominantes eram Inglês (36%), Francês (32%) e Árabe (25%) (Darmoni & Poell, 2011). Essa diversidade linguística era estratégica: os principais usuários ativos agiam como "elos vitais" (Poell & Darmoni, 2013), utilizando o Inglês para relatar factos e dados globais, e o Francês para criticar o envolvimento da França (Darmoni & Poell, 2011). O uso estratégico de idiomas diferentes para públicos distintos sublinha a complexidade da comunicação ativista na rede.
+   </p>
+	<p>
+	3.	Amplificação e Não Iniciação: Há um forte cibercepticismo acadêmico que rejeita a ideia de que o Twitter causou a revolução. A #sidibouzid foi crucial para a amplificação e disseminação transnacional, especialmente para informar a opinião pública externa e a mídia internacional, como a Al Jazeera, que usou o conteúdo gerado por usuários para cobrir os protestos. Internamente, a mobilização dependia de métodos tradicionais, como mensagens SMS, e o acesso à internet foi até bloqueado pelo governo por dias, impedindo a participação direta de grande parte da população.
+	</p>
+	<p>
+	4.	Efemeridade da Atenção Global: Embora a #sidibouzid e temas relacionados (como #egypt) tenham se tornado os "tópicos quentes" (hot topics) globais em 2011, alcançando um enorme poder amplificador, o aspecto da efemeridade da atenção gerada merece atenção. A rapidez com que um tema explode na agenda digital é igual à rapidez com que pode desaparecer da "agenda cidadã" global após o evento urgente (González Aldea, 2012).
 	</p>
    </div>
    
@@ -178,18 +219,83 @@
     O tamanho dos nós representa a frequência e as cores identificam as categorias.
   </p>
 </section>
+<h2 class="fontes-header">
+  <button id="fontes-toggle-sidibouzid"
+          class="fontes-toggle"
+          aria-expanded="false"
+          aria-controls="fontes-hashtag-sidibouzid">
+    <span class="chevron" aria-hidden="true">▸</span> Fontes
+  </button>
+</h2>
 
-	  
-	  <div class="fontes-hashtag">
+<section id="fontes-hashtag-sidibouzid" class="fontes-content" hidden>	  
+	  <div class="fontes-hashtag-sidibouzid">
   <h4>Fontes</h4>
-  <p>
-     SOBRENOME, Autor. <em>Título</em>. Local, ano.</p> [link se houver]</li>
-    <li>ORGANIZAÇÃO. <em>Nome do site</em>. Acesso em: xx/xx/xxxx. [link]</li>
-    <!-- Adicione quantas quiser -->
-	</p>
+<p>ADAY, S. et al. New media and conflict after the Arab Spring. United States Institute of …, 2012.</p>
+<p>ADAY, S. et al. Watching from afar: Media consumption patterns around the Arab Spring. American …, 2013.</p>
+<p>ALSAYYAD, N.; GUVENC, M. Virtual uprisings: On the interaction of new social media, traditional media coverage and urban space during the “Arab Spring”. Urban studies, 2015.</p>
+<p>AL-WAKED, AM. The effect of the information management policy on the growth of the Digital Economy: the case of the Arab Spring. American Academic & Scholarly Research Journal, 2013.</p>
+<p>ANAS, O. Sosyal Medyada Arap İsyanları: Arap Dünyasında Kamusal Alanın Değiştirilmesi. Ortadoğu Etütleri, 2019.</p>
+<p>BARTKOWIAK, JZ; FONSECA, TDEA; ... A primavera árabe e as redes sociais: o uso das redes sociais nas manifestações da primavera árabe nos países da Tunísia, Egito e Líbia. Revista Cadernos …, 2017.</p>
+<p>BELYAKOV, N.; PROKHVATILOV, V. New media and the arab spring. Информационные войны, 2012.</p>
+<p>BENKIRANE, R. The alchemy of revolution: The role of social networks and new media in the Arab Spring. GCSP Policy Paper, 2012.</p>
+<p>BLAS, SN. Social media and the Arab Spring. [S.l.]: apps.dtic.mil, 2018.</p>
+<p>BORER, TA; KIERAN, D.; MCPHERSON, E. Fralning Strategies for economic and social rights in the Umtedstates--............. 122. academia.edu, [S.d.].</p>
+<p>BRYDON, L.; PASTOR-GONZÁLEZ, V. Collaborative futures/Futuros en colaboración. NECSUS_European Journal of Media …, 2021.</p>
+<p>CABEDOCHE, B. On the Societal Impact of ICTs: The gap between Journalists’ Analyses and Research Conclusions–the Example of “Arab Revolutions”. Past, Future and Change: Contemporary Analysis of …, 2013.</p>
+<p>CABEDOCHE, B. Social media and social change. The construction of myths in mainstream Western Media. Yeni Medya Ynei Yaklasimlar Konferansi (Social Media …, 2015.</p>
+<p>CABEDOCHE, B. Des sciences de l’information et de la communication à équidistance de tout déterminisme. researchgate.net, [S.d.].</p>
+<p>COLLA, B. The People Want. Middle East Report, 2012.</p>
+<p>COMNINOS, A. E-revolutions and cyber crackdowns: User-generated content and social networking in protests in MENA and beyond. Association for Progressive Communications, 2011a.</p>
+<p>COMNINOS, A. Twitter revolutions and cyber crackdowns. Np: Association for Progressive Communications, 2011b.</p>
+<p>DAHMEN-JARRIN, Z. Mondialisation et culture numérique: le «paradoxe» des nouveaux dispositifs de communication. "Les Actes du colloque d’Agadir 2012 sont …, 2012a.</p>
+<p>DAHMEN-JARRIN, Z. The Hazards of the Free Flow of Information in the ’New Media’ in Tunisia. ESSACHESS Journal for Communication …, 2012b.</p>
+<p>DEMIRDIS, S.; VICARI, S.; REILLY, P. Hashtag publics, networked framing and the July 2016 ’coup’ in Turkey. First Monday, 2023.</p>
+<p>DOELLINGER, D.; GOLDSWORTHYBISHOP, P. FIRE: Agent of Change, 2014.</p>
+<p>FERREIRA, LP. Das cinzas dos ditadores árabes não nascem democracias. Gaudium Sciendi, 2012.</p>
+<p>GHAZZAOUI, SM. Social media and uprisings in Tunisia and Egypt. [S.l.]: laur.lau.edu.lb, 2015.</p>
+<p>GHELFENSTEIN, N. Social media and political protest: social movements due to Web 2.0. networkconference.netstudies.org, [S.d.].</p>
+<p>HALVERSON, JR; RUSTON, SW; ... Mediated martyrs of the Arab Spring: New media, civil religion, and narrative in Tunisia and Egypt. Journal of …, 2013.</p>
+<p>HOWARD, P. et al. Opening closed regimes: what was the role of social media during the Arab Spring? [S.l.]: deepblue.lib.umich.edu, 2011.</p>
+<p>JOSEPH, S. Social media, human rights and political change. Human Rights and Political Change, 2012a.</p>
+<p>JOSEPH, S. Social media, political change, and human rights. BC Int’l & Comp. L. Rev., 2012b.</p>
+<p>KAAP, H. et al. kritische berichte. kritische …, 2019.</p>
+<p>KALLANDER, AA. From TUNeZINE to Nhar 3la 3mmar: A Reconsideration of the Role of Bloggers in Tunisia’s Revolution. Arab Media and Society, 2013.</p>
+<p>KAROSANIDZE, T. Social media language during the “Arab Spring” in Egypt and Tunisia. G. Tsereteli Institute of Oriental Studies, [S.d.].</p>
+<p>KAVANAUGH, AL et al. Microblogging in crisis situations: Mass protests in Iran, Tunisia, Egypt. [S.l.]: vtechworks.lib.vt.edu, 2011.</p>
+<p>KAVANAUGH, AL et al. Between a rock and a cell phone: Communication and information technology use during the 2011 Egyptian uprising. ISCRAM, 2012.</p>
+<p>LANDORF, B. Female reverberations online: An analysis of Tunisian, Egyptian, and Moroccan female cyberactivism during the Arab Spring. [S.l.]: digitalcommons.macalester.edu, 2014.</p>
+<p>LAPA, T.; CARDOSO, G. (Social) media isn’t the message, networked people are: calls for protest through social media. (Social) media isn’t the message …, 2016.</p>
+<p>LECOMTE, R. Révolution tunisienne et Internet: le rôle des médias sociaux. L’année du Maghreb, 2011.</p>
+<p>LIM, M. Framing Bouazizi: ’White lies’, hybrid network, and collective/connective action in the 2010–11 Tunisian uprising. Journalism, 2013.</p>
+<p>LOSH, E.; COLEMAN, B.; AMEL, VJU. Will the Revolution Be Tweeted? Mapping Complex Data Patterns from Sites of Protest. AoIR Selected Papers of Internet …, 2013.</p>
+<p>LOTAN, G. et al. The Arab Spring | the revolutions were tweeted: Information flows during the 2011 Tunisian and Egyptian revolutions. International Journal of …, 2011.</p>
+<p>MIONI, MS. La Primavera Árabe en el Magreb. Un análisis de las causas y consecuencias geopolíticas de las revueltas árabes en el periodo …. Instituto de Estudios Sociales, Política y Cultura, 2020.</p>
+<p>MIRAK, Y. Ben Ali, le vrai-faux départ. Outre-Terre, 2011.</p>
+<p>NIELSEN, C.; BOWE, BJ; KOOLI, A. Emerging Reporters in a Nascent Democracy: How Tunisian Pre-Professional Journalists Perceive and Use Social Media in Their Work. Arab Media & Society, 2024.</p>
+<p>POELL, T. Social media activism and state censorship. Social media, politics and the state, 2014.</p>
+<p>POELL, T.; DARMONI, K. Twitter as a multilingual space: The articulation of the Tunisian revolution through #sidibouzid. necsus-ejms.org, [S.d.].</p>
+<p>POELL, T.; DIJCK, J. Van. Social media and activist communication. The Routledge Companion to Alternative and …, 2015.</p>
+<p>RANDEREE, B.; JAZEERA, A. El nuevo ecosistema mediático. Universidad Carlos III de …, 2013.</p>
+<p>SARY, FD. Pengaruh media sosial dalam pembentukan budaya Timur Tengah pasca Arab Spring. Dinamika Budaya Timur Tengah, 2015.</p>
+<p>SCHANKWEILER, K. Affektive Dynamiken von Bildern in Zeiten von Social Media: Bildzeugenschaften aus Ägypten, 2010–2013. Kritische berichte-Zeitschrift für …, 2016.</p>
+<p>SHOKHEH, M.; EBRAHIMI, M. From tweet to street: Social media during the Arab spring. The Middle East arc of crisis: Political …, 2018.</p>
+<p>SINGH, N. et al. Identification of influence propagation metrics in social networks. Conference on Automation …, 2019.</p>
+<p>STEPHENS, C. Cross-Class Coalition as a Force in Revolution: A Case Study of Tunisia’s Arab Spring. LSE Undergraduate Political Review, 2022.</p>
+<p>THIMM, C. Proceedings of M4D 2012 28-29 February 2012 New …, 2012.</p>
+<p>TRANSFELD, M.; WERENFELS, I. #HashtagSolidarities: Twitter debates and networks in the MENA region. [S.l.]: ssoar.info, 2016a.</p>
+<p>TRANSFELD, M.; WERENFELS, I. Twitter Debates and Networks in the MENA Region, 2016b.</p>
+<p>YORK, JC. Free speech in the age of Twitter. The Cairo Review of Global Affairs, 2011.</p>
+<p>ZHUO, X.; WELLMAN, B.; YU, J. Egypt: The first internet revolt? Boletim do tempo presente, 2012.</p>
+<p>ФРОЛОВ, ДБ; ПРОХВАТИЛОВ, ВВ; ... New media и Арабская весна. Международные …, 2012.</p>
+  <noscript>
+    <!-- fallback: se o JS estiver desativado, mostramos as fontes -->
+    <style>#fontes-hashtag-sidibouzid{display:block !important}</style>
+  </noscript>
+ </div> 
 </div>
-
 </section>
+
 
 <section id="hongkongprotests-section" class="hashtag-detalhe" style="display: none;">
   <div class="detalhe-conteudo">
@@ -199,12 +305,14 @@
       <p>
         A hashtag <strong>#hongkongprotests</strong> emergiu em 2019 como marcador digital dos protestos em Hong Kong contra o projeto de lei de extradição para a China continental. Rapidamente tornou-se um símbolo da resistência pró-democracia, acompanhando manifestações massivas, enfrentamentos com a polícia e táticas de mobilização inovadoras. Circulou amplamente nas redes sociais globais, enquanto enfrentava censura em plataformas chinesas, inscrevendo o movimento na memória digital transnacional como um episódio emblemático de luta por autonomia política e liberdade de expressão.
       </p>
+	 </div>
+</div>
     <div class= "interpretacao-historica">
 	<h4>Curta e Média duração</h4>
 	<p> 
 	A hashtag <strong>#hongkongprotests</strong> opera simultaneamente em duas temporalidades distintas. Na curta duração, funciona como um marcador dos acontecimentos imediatos, difundindo imagens, vídeos e relatos em tempo real dos protestos, confrontos e mobilizações nas ruas de Hong Kong. Já na média duração, conecta-se a um ciclo mais amplo de disputas políticas e sociais, inserindo-se na continuidade das tensões entre Hong Kong e a China desde a transferência de soberania em 1997. Dessa forma, a hashtag inscreve não apenas um evento, mas uma conjuntura política em processo, ampliando sua memória digital para além do acontecimento pontual.
 	</p>
-      </div>
+    </div>
 	  
 	  <div class="hashtags-correlatas">
   <h4>Hashtags Correlatas</h4>
@@ -213,7 +321,7 @@
     <li><a href="#StandWithHongKong-section">#StandWithHongKong</a></li>
     <li><a href="#AntiExtraditionLaw-section">#AntiExtraditionLaw</a></li>
   </ul>
-</div>
+		</div>
 
 	  <div class="fontes-hashtag">
   <h4>Fontes</h4>
@@ -324,7 +432,7 @@ A hashtag evidencia, portanto, uma prática de reinscrição contínua do passad
 
 </section>
 
-<section id="blacklifesmatter-section" class="hashtag-detalhe" style="display: none;">
+<section id="blacklivesmatter-section" class="hashtag-detalhe" style="display: none;">
   <div class="detalhe-conteudo">
     <img src="images/blacklivesmatter_ilustracao.png" alt="Ilustração da hashtag #blacklivesmatter" class="imagem-hashtag" />
     <div class="texto-hashtag">
@@ -439,7 +547,79 @@ Embora a hashtag continue a ser utilizada, observa-se uma gradual diminuição e
   </div> <!-- fecha detalhe-conteudo -->
 </section>
 
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+  const barra = document.querySelector('.hashtag-barra');
+  if (!barra) return;
 
+  // Esconde todas as seções
+  function hideAll() {
+    document.querySelectorAll('.hashtag-detalhe').forEach(sec => {
+      sec.style.display = 'none';
+    });
+  }
+
+  // Clique em qualquer hashtag
+  barra.addEventListener('click', (e) => {
+    const el = e.target.closest('.hashtag-icon');
+    if (!el) return; // clicou fora, ignora
+
+    // limpa o "active" de todas
+    barra.querySelectorAll('.hashtag-icon').forEach(tag => tag.classList.remove('active'));
+    el.classList.add('active');
+
+    // pega o destino
+    const id = el.getAttribute('data-id');
+    const secao = document.getElementById(id + '-section');
+
+    hideAll();
+    if (secao) {
+      secao.style.display = 'flex';
+    } else {
+      console.warn("Seção não encontrada para:", id);
+    }
+  });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const btn = document.getElementById('fontes-toggle-sidibouzid');
+  const content = document.getElementById('fontes-hashtag-sidibouzid');
+  if (!btn || !content) return; // não quebra o resto
+
+  // restaura estado salvo (opcional)
+  const saved = localStorage.getItem('fontesOpen') === '1';
+  if (saved){
+    content.hidden = false;
+    content.classList.add('is-open');
+    btn.setAttribute('aria-expanded', 'true');
+  }
+
+  btn.addEventListener('click', function(){
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+
+    if (!expanded){
+      // abrir
+      content.hidden = false;         // remove "hidden" para permitir animar
+      requestAnimationFrame(() => {   // garante pintura antes de animar
+        content.classList.add('is-open');
+      });
+      localStorage.setItem('fontesOpen', '1');
+    } else {
+      // fechar
+      content.classList.remove('is-open');
+      content.addEventListener('transitionend', function handler(e){
+        if (e.propertyName === 'max-height'){
+          content.hidden = true;      // esconde só após a animação
+          content.removeEventListener('transitionend', handler);
+        }
+      });
+      localStorage.setItem('fontesOpen', '0');
+    }
+  });
+});
+</script>
 <script>
   document.querySelectorAll('.carousel-container').forEach(container => {
     const track = container.querySelector('.carousel-track');
@@ -470,3 +650,20 @@ Embora a hashtag continue a ser utilizada, observa-se uma gradual diminuição e
     window.addEventListener('resize', updateCarousel);
   });
 </script>
+<script>
+  function selecionarHashtag(elementoClicado) {
+    const todas = document.querySelectorAll('.hashtag-icon');
+    todas.forEach(tag => tag.classList.remove('active'));
+    elementoClicado.classList.add('active');
+
+    const id = elementoClicado.getAttribute('data-id');
+    document.querySelectorAll('.hashtag-detalhe').forEach(sec => sec.style.display = 'none');
+
+    const secao = document.getElementById(id + '-section');
+    if (secao) secao.style.display = 'flex';
+  }
+  window.selecionarHashtag = selecionarHashtag;  <!-- ✅ esta linha -->
+</script>
+
+</body>
+</html>
