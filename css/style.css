@@ -347,6 +347,29 @@ body {
   box-sizing: border-box;
 }
 
+/* Garantir layout do trilho e das imagens */
+.carousel-track {
+  display: flex;
+  gap: 0;
+  overflow: hidden;
+}
+
+.carousel-track img {
+  flex: 0 0 100%;
+  display: block;      /* evita espaços/alturas inesperadas */
+  object-fit: contain; /* mantém proporção dentro do slide */
+}
+
+/* Container com largura/altura previsíveis */
+.carousel-container {
+  position: relative;
+  max-width: 500px;    /* pode ajustar */
+  margin: auto;
+  overflow: hidden;
+  aspect-ratio: 3/2;   /* dá uma altura inicial ao container */
+}
+
+
 #sidibouzid-network {
   text-align: center;
   margin: 40px 0;
