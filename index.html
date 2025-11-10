@@ -686,6 +686,39 @@ document.addEventListener('DOMContentLoaded', function(){
   }
   window.selecionarHashtag = selecionarHashtag;  <!-- ✅ esta linha -->
 </script>
+  <!-- Script do carrossel -->
+  <script>
+  (function () {
+    const carousels = document.querySelectorAll('.carousel-container');
+    carousels.forEach(container => {
+      const track  = container.querySelector('.carousel-track');
+      const slides = Array.from(track.children);
+      let index = 0;
+
+      function update() {
+        track.style.transform = `translateX(-${index * 100}%)`;
+      }
+
+      const prev = container.querySelector('.prev');
+      const next = container.querySelector('.next');
+
+      if (prev) prev.addEventListener('click', () => {
+        index = (index - 1 + slides.length) % slides.length;
+        update();
+      });
+
+      if (next) next.addEventListener('click', () => {
+        index = (index + 1) % slides.length;
+        update();
+      });
+
+      // garante posição correta em redimensionamentos
+      window.addEventListener('resize', update);
+
+      update();
+    });
+  })();
+  </script>
 
 </body>
 </html>
