@@ -266,26 +266,6 @@ body {
   margin-bottom: 1rem;
 }
 
-.carousel-container {
-  position: relative;
-  max-width: 300px;
-  margin: auto;
-  overflow: hidden;
-}
-
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-track img {
-  width: 100%;
-  height: auto;
-  flex-shrink: 0;
-  max-width: 100%;
-  border-radius: 8px;
-}
-
 .prev, .next {
   position: absolute;
   top: 50%;
@@ -347,28 +327,29 @@ body {
   box-sizing: border-box;
 }
 
-/* Garantir layout do trilho e das imagens */
+/* --- Ajuste final do carrossel --- */
+.carousel-container {
+  position: relative;
+  max-width: 500px;     /* largura máxima do carrossel */
+  margin: 0 auto;
+  overflow: hidden;
+  aspect-ratio: 3/2;    /* define altura proporcional */
+}
+
 .carousel-track {
   display: flex;
-  gap: 0;
-  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
 }
 
 .carousel-track img {
+  width: 100%;
   flex: 0 0 100%;
-  display: block;      /* evita espaços/alturas inesperadas */
-  object-fit: contain; /* mantém proporção dentro do slide */
+  height: auto;
+  display: block;
+  object-fit: contain;   /* mantém a imagem inteira visível */
+  border-radius: 8px;
 }
-
-/* Container com largura/altura previsíveis */
-.carousel-container {
-  position: relative;
-  max-width: 500px;    /* pode ajustar */
-  margin: auto;
-  overflow: hidden;
-  aspect-ratio: 3/2;   /* dá uma altura inicial ao container */
-}
-
 
 #sidibouzid-network {
   text-align: center;
