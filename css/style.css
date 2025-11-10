@@ -333,7 +333,6 @@ body {
   max-width: 500px;     /* largura máxima do carrossel */
   margin: 0 auto;
   overflow: hidden;
-  aspect-ratio: 3/2;    /* define altura proporcional */
 }
 
 .carousel-track {
