@@ -404,6 +404,19 @@ body {
   line-height:1.4;
   color:#333;        /* opcional, mais suave que o corpo */
 }
+/* Esconde completamente uma seção */
+.hidden-section {
+  display: none;
+}
+
+/* Estilo simples para a mensagem "em construção" (opcional) */
+.construction-message {
+  margin: 20px 0;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px dashed #C76C4E;   /* terracota Hashttory */
+  font-style: italic;
+}
 
 
 
