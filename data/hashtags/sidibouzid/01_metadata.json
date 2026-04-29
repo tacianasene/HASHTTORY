@@ -1,9 +1,1 @@
-{
-  "hashtag": "#sidibouzid",
-  "associated_event": "Self-immolation of Mohamed Bouazizi",
-  "location": "Tunisia",
-  "event_start_date": "2010-12-17",
-  "phenomenon_type": "Protest",
-  "temporal_status": "Trigger-event",
-  "short_description": "Hashtag associated with the event that triggered the Arab Spring."
-}
+{"hashtag": "#BlackLivesMatter","associated_event": "Killing of Trayvon Martin and subsequent acquittal of George Zimmerman; later expanded through multiple cases of police violence (e.g., Michael Brown, Eric Garner, Tamir Rice)","location": "United States (with global diffusion)","event_start_date": "2013","phenomenon_type": "social movement / digital activism / political intervention","temporal_status": "ongoing","short_description": "#BlackLivesMatter is a hashtag that emerged in 2013 as a response to the acquittal of George Zimmerman in the killing of Trayvon Martin, evolving into a global movement that mobilizes against systemic anti-Black racism, police violence, and broader forms of state inequality."}
