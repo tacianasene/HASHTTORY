@@ -1,8 +1,8 @@
-{ "braudelian_duration": "",
-  "expands_to_mid_duration": null,
-  "memory_type_assmann": "",
-  "dominant_regime_of_historicity_hartog": "",
-  "reactivations_years": [],
+{ "braudelian_duration": "centered on a specific event with conjunctural expansion",
+  "expands_to_mid_duration": true,
+  "memory_type_assmann": "functional event memory",
+  "dominant_regime_of_historicity_hartog": "event-drive presentism",
+  "reactivations_years": [2010, 2011],
   "model_confidence": null,
-  "notes": ""
+  "notes": "The #sidibouzid is strongly anchored to the initial events of the Tunisian Revolution and the broader conjuncture of the Arab Spring. Its temporal dynamics are characterized by real-time circulation, multilingual synchronization, and transnational information flows. Unlike #BlackLivesMatter, #sidibouzid presents limited long-term reactivation, remaining primaly associated with the foundational event cycle of 2010-2011."
 }
