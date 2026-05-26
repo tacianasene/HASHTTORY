@@ -1,9 +1,9 @@
 {
-  "braudelian_duration": "",
-  "expands_to_mid_duration": null,
-  "memory_type_assmann": "",
-  "dominant_regime_of_historicity_hartog": "",
-  "reactivations_years": [],
+  "braudelian_duration": "multi-layered duration",
+  "expands_to_mid_duration": true,
+  "memory_type_assmann": "reactivated functional memory",
+  "dominant_regime_of_historicity_hartog": "presentism with historical reactivation",
+  "reactivations_years": [2013,2014,2020],
   "model_confidence": null,
-  "notes": ""
+  "notes": "The hashtag articulates event-based reactivations with broader conjunctural ans structural historical references. Unlile #sidibouzid, #BlackLivesMatter demonstrates recurrent reactivation dynamics and strong connections to long-term historical structures such as slavery, white supremacy, and systemic racism. The analysis also indicates semantic expansion, institutionalization processes, and the emergence of derivative hashtags."
 }
